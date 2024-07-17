@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             height: 100vh;
-            background-color: #f0f8ff;
+            background-color: #1a1a1a; /* Fondo negro no puro */
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
@@ -60,16 +60,23 @@
             margin: 20px 0;
         }
 
+        .language-labels {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         label {
             background-color: #007BFF;
             color: #FFFFFF;
             padding: 20px 40px;
-            margin: 20px 10px;
+            margin: 10px;
             border-radius: 10px;
-            display: inline-block;
             cursor: pointer;
             font-size: 30px;
             transition: background-color 0.3s;
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
         }
 
         label:hover {
@@ -78,7 +85,7 @@
 
         @media (max-width: 600px) {
             label {
-                width: calc(100% - 20px);
+                flex: 1 1 calc(100% - 20px);
             }
 
             .container {
@@ -158,7 +165,7 @@
     <div class="container">
         <div class="initial">
             <p>Select a Language:</p>
-            <div>
+            <div class="language-labels">
                 <label for="english">English</label>
                 <label for="spanish">Spanish</label>
                 <label for="french">French</label>
