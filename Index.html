@@ -88,23 +88,24 @@
             background-color: #0056b3;
         }
 
-        @media (max-width: 600px) {
-    .container {
-        height: 80vh; /* Ajusta la altura al 80% del alto de la ventana */
-        width: 90%; /* Reduce el ancho al 90% */
-        margin: 5% auto; /* Centra horizontalmente con un pequeño margen superior e inferior */
-        padding: 1em; /* Ajusta el padding para mayor espacio en pantallas pequeñas */
-    }
-
-    .language-labels {
-        flex-direction: column; /* Cambia la dirección de los elementos a columna */
-    }
-
-    label {
-        flex: 1 1 100%; /* Ocupa todo el ancho disponible */
-        margin: 10px 0; /* Espacio entre los elementos */
-    }
-}
+         @media (max-width: 600px) {
+             .container {
+                height: 80vh; /* Ajusta la altura al 80% del alto de la ventana */
+                width: 90%; /* Reduce el ancho al 90% */
+                margin: 5% auto; /* Centra horizontalmente con un pequeño margen superior e inferior */
+                padding: 1em; /* Ajusta el padding para mayor espacio en pantallas pequeñas */
+            }
+    
+            .language-labels {
+                flex-direction: column; /* Cambia la dirección de los elementos a columna */
+                align-items: stretch; /* Ajusta los elementos a estirarse verticalmente */
+            }
+    
+            label {
+                width: 100%; /* Ocupa todo el ancho disponible */
+                margin: 10px 0; /* Espacio entre los elementos */
+            }
+        }
 
             .container {
                 padding: 1em;
