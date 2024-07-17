@@ -20,22 +20,20 @@
         }
 
         .initial {
-            height: 80%;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
+            align-items: center;
         }
 
         .container {
             background-color: #FFFFFF;
             width: 100%;
-            height: 50vh;
             padding: 2em;
             border: 1px solid black;
             border-radius: 20px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow-y: auto;
         }
 
         .message {
@@ -45,9 +43,9 @@
         .mensaje {
             display: flex;
             align-items: center;
-            height: 100%;
             justify-content: center;
             font-size: 54px;
+            height: 100%;
         }
 
         .message.active {
@@ -55,7 +53,7 @@
         }
 
         p {
-            font-size: 54px;
+            font-size: 36px;
             color: #333;
             margin: 20px 0;
         }
@@ -64,19 +62,21 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            width: 100%;
         }
 
         label {
             background-color: #007BFF;
             color: #FFFFFF;
-            padding: 20px 40px;
+            padding: 10px 20px;
             margin: 10px;
             border-radius: 10px;
             cursor: pointer;
-            font-size: 30px;
+            font-size: 20px;
             transition: background-color 0.3s;
-            flex: 1 1 calc(33.333% - 20px);
+            flex: 1 1 calc(20% - 20px);
             box-sizing: border-box;
+            text-align: center;
         }
 
         label:hover {
@@ -85,7 +85,7 @@
 
         @media (max-width: 600px) {
             label {
-                flex: 1 1 calc(100% - 20px);
+                flex: 1 1 calc(50% - 20px);
             }
 
             .container {
